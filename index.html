@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trusted Rummy Apps – premium rummy experience with style and rewards." />
+  <title>Trusted Rummy Apps</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17403332740"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17403332740');
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main, .cta-section {
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-line1 {
+      font-size: 3.5em;
+      font-weight: 700;
+      letter-spacing: 5px;
+      color: #00ffcc;
+      text-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+      margin-bottom: -10px;
+      animation: glowPulse 2.5s infinite alternate;
+    }
+
+    .logo-line2 {
+      font-size: 4em;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #00ffcc, #0088ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #00ffcc;
+      text-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 204, 0.2);
+      opacity: 0;
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.3s; }
+    .card:nth-child(2) { animation-delay: 0.6s; }
+    .card:nth-child(3) { animation-delay: 0.9s; }
+    .card:nth-child(4) { animation-delay: 1.2s; }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 255, 204, 0.6);
+      border: 1px solid rgba(0, 255, 204, 0.7);
+    }
+
+    .card span {
+      font-size: 3em;
+      display: block;
+      margin-bottom: 15px;
+      color: #00ffcc;
+      animation: iconBounce 2s infinite;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .cta-btn {
+      padding: 18px 50px;
+      font-size: 1.5em;
+      color: #111;
+      background: linear-gradient(90deg, #00ffcc, #0088ff);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
+      transition: all 0.3s;
+      border: none;
+      animation: pulseGlow 2s infinite;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0, 255, 204, 0.8);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      font-size: 0.9em;
+      color: #00ffcc;
+      backdrop-filter: blur(5px);
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glowPulse {
+      from { text-shadow: 0 0 10px #00ffcc, 0 0 20px #0088ff; }
+      to { text-shadow: 0 0 25px #00ffcc, 0 0 45px #0088ff; }
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 15px rgba(0, 255, 204, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(0, 255, 204, 0.7); }
+      100% { box-shadow: 0 0 15px rgba(0, 255, 204, 0.3); }
+    }
+
+    @keyframes iconBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">
+        <div class="logo-line1">TRUSTED</div>
+        <div class="logo-line2">RUMMY APPS</div>
+      </div>
+      <p>Play the most exciting and rewarding rummy games online!</p>
+    </header>
+
+    <main>
+      <div class="card"><span>⚡</span>Fast & Fair Gameplay</div>
+      <div class="card"><span>🎯</span>Daily Big Prize Challenges</div>
+      <div class="card"><span>💳</span>Secure Payments & Withdrawals</div>
+      <div class="card"><span>📱</span>Play Anytime, Anywhere</div>
+    </main>
+
+    <div class="cta-section">
+      <a class="cta-btn" href="https://tinyurl.com/mr3yahcs" target="_blank">Play Now & Win Big</a>
+    </div>
+
+    <footer>
+      © 2025 Trusted Rummy Apps. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
